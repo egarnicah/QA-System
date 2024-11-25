@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro RMNC</title>
+</head>
+<body>
+    <h1>Registro Inicial de RMNC</h1>
+    <form action="/" method="POST">
+        <!-- Unidad de Negocios -->
+        <label for="unidad-negocios">Unidad de Negocios:</label>
+        <select id="unidad-negocios" name="unidad-negocios" required>
+            <option value="">Seleccione...</option>
+            <option value="AV">AV</option>
+            <option value="INT">INT</option>
+            <option value="URE">URE</option>
+        </select>
+        
+        <!-- Fecha de Emisión -->
+        <label for="fecha-emision">Fecha de Emisión:</label>
+        <input type="date" id="fecha-emision" name="fecha-emision" required>
+
+        <!-- Iniciador -->
+        <label for="iniciador">Iniciador del RMNC:</label>
+        <input type="text" id="iniciador" name="iniciador" required>
+
+        <!-- Proveedor -->
+        <label for="proveedor">Nombre del Proveedor:</label>
+        <input type="text" id="proveedor" name="proveedor" required>
+
+        <!-- Contacto -->
+        <label for="contacto">Nombre del Contacto:</label>
+        <input type="text" id="contacto" name="contacto" required>
+
+        <!-- Número de Parte -->
+        <label for="numero-parte">Número de Parte:</label>
+        <input type="text" id="numero-parte" name="numero-parte" required>
+
+        <!-- Status de la Parte -->
+        <label for="status-parte">Status de la Parte:</label>
+        <select id="status-parte" name="status-parte" required>
+            <option value="">Seleccione...</option>
+            <option value="Producción Masiva">Producción Masiva</option>
+            <option value="Proyectos">Proyectos</option>
+        </select>
+
+        <!-- Descripción del Problema -->
+        <label for="descripcion-problema">Descripción del Problema:</label>
+        <textarea id="descripcion-problema" name="descripcion-problema" rows="4" required></textarea>
+
+        <!-- Reincidencia -->
+        <label for="reincidencia">Reincidencia:</label>
+        <select id="reincidencia" name="reincidencia" required>
+            <option value="">Seleccione...</option>
+            <option value="Sí">Sí</option>
+            <option value="No">No</option>
+        </select>
+
+        <!-- Cantidad Recibida -->
+        <label for="cantidad-recibida">Cantidad Recibida:</label>
+        <input type="number" id="cantidad-recibida" name="cantidad-recibida" required>
+
+        <!-- Cantidad Inicial Rechazada -->
+        <label for="cantidad-rechazada">Cantidad Inicial Rechazada:</label>
+        <input type="number" id="cantidad-rechazada" name="cantidad-rechazada" required>
+
+        <!-- Botón de Envío -->
+        <button type="submit">Registrar RMNC</button>
+    </form>
+</body>
+</html>
